@@ -13,11 +13,11 @@ import cucumber.api.java.en.Then;
 public class LoginStepDefinition {
 
 	private WebDriver webDriver;
+	public static String curDir = System.getProperty("user.dir");
 
 	@Given("^El usuario esta en la pagina principal de linkedin$")
 	public void irALaPaginaDeLinkedin() throws Throwable {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\liliannysarahy\\Respaldo Lany\\Escritorio\\cucumber\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", curDir + "\\Driver\\chromedriver.exe");
 		webDriver = new ChromeDriver();
 		webDriver.get("https://www.linkedin.com");
 	}
