@@ -8,6 +8,6 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/login", snippets = SnippetType.CAMELCASE)
-public class LoginRunTest {
+public class LoginRunTest { 
 
 }
