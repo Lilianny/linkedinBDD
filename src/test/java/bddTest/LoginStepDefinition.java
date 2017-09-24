@@ -39,7 +39,7 @@ public class LoginStepDefinition {
 			System.out.println("Login " +status);
 		} else {
 			throw new Exception();
-		}
+		} 
 		webDriver.close();
 	}
 
